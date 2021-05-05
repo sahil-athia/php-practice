@@ -12,9 +12,10 @@ echo $x + $y . "\n";
 
 // change the global vars
 function myTest() {
-  // need to use the word
+  
+  // need to use the word global
   global $x, $y;
-  $y = $x + $y + 1;
+  $y = $x + $y + 145;
 }
 myTest();
 echo $y . "\n";
