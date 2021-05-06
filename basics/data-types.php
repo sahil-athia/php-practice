@@ -46,8 +46,13 @@ class Car {
   }
 
   public function message() {
-    return "This car is a " . $this->color . " " . $this->model . "!";
+    return "This car is a " . $this->color . " " . $this->model . "! \n";
   }
 }
 
+$myCar = new Car("white", "Toyota");
+echo $myCar -> message();
+
+$myOtherCar = new Car("blue", "honda");
+echo $myOtherCar -> message();
 ?>
