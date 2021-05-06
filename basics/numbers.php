@@ -23,4 +23,19 @@ $x = 1.9e411;
 var_dump($x);
 echo var_dump(is_finite($x));
 echo var_dump(is_infinite($x));
+
+// php is_numeric will solve if a variable is a number or numeric string or neither
+echo "is numeric \n";
+
+$x = 5985;
+var_dump(is_numeric($x));
+
+$x = "5985";
+var_dump(is_numeric($x));
+
+$x = "59.85" + 100;
+var_dump(is_numeric($x));
+
+$x = "Hello";
+var_dump(is_numeric($x));
 ?>
