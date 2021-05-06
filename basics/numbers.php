@@ -38,4 +38,18 @@ var_dump(is_numeric($x));
 
 $x = "Hello";
 var_dump(is_numeric($x));
+
+// php cating strings and floats to integers
+echo "casting \n";
+
+// casting floats
+$x = 8365.6648;
+$int_cast = (int)$x;
+echo $int_cast . "\n";
+
+// casting strings
+$x = "37652.6648";
+$int_cast = (int)$x;
+echo $int_cast . "\n";
+
 ?>
