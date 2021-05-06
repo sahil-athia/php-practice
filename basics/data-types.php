@@ -55,4 +55,11 @@ echo $myCar -> message();
 
 $myOtherCar = new Car("blue", "honda");
 echo $myOtherCar -> message();
+
+
+// php null 
+
+$x = "Hello world!";
+$x = null;
+var_dump($x);
 ?>
