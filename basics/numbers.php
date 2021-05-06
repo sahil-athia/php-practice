@@ -8,4 +8,19 @@ var_dump(is_int($x));
 
 $x = 59.85;
 var_dump(is_int($x));
+
+// any number with a decimal or in exponental form is a FLOAT
+// can check using is_float()
+
+$x = 10.365;
+var_dump(is_float($x));
+
+// in php, PHP_FLOAT_MAX is the largest floating point number that can be represented
+// infinity is any thing larger than PHP_FLOAT_MAX
+// we can check this with is_finite or is_infinate
+
+$x = 1.9e411;
+var_dump($x);
+echo var_dump(is_finite($x));
+echo var_dump(is_infinite($x));
 ?>
