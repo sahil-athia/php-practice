@@ -29,4 +29,25 @@ $f = false;
 var_dump($t) . "\n";
 var_dump($f) . "\n";
 
+// array
+
+$cars = array("Volvo","BMW","Toyota");
+var_dump($cars);
+
+// class and object
+
+class Car {
+  public $color;
+  public $model;
+
+  public function __construct($color, $model) {
+    $this->color = $color;
+    $this->model = $model;
+  }
+
+  public function message() {
+    return "This car is a " . $this->color . " " . $this->model . "!";
+  }
+}
+
 ?>
